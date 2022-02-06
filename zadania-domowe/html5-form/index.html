@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1-formularz-html5</title>
+</head>
+<body>
+    <!-- Document checking completed. No errors or warnings to show. -->
+    <!-- Potwierdzenie przesłania form w załączaniku .png -->
+
+    <form action="https://formspree.io/f/mayveloo" method="POST">
+        <label for="name">Podaj imię:</label>
+        <input type="text" name="name" id="name">
+        <br>
+
+        <label for="email">Podaj email:</label>
+        <input type="text" name="email" id="email">
+        <br>
+
+        <label for="phone">Podaj numer telefonu</label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+
+        <label for="city">Podaj miasto:</label>
+        <select id="city-list">
+            <option value="Miasto">Wybierz miasto</option>
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select>
+        <br>
+
+        <input type="text" name="city" id="city">
+        <br>
+
+        <label for="Personal-data">Dane osobowe - wyraź zgodę: </label>
+        <input type="checkbox" id="Personal-data">
+        <br>
+
+        <label for="area-text-mess">Wpisz wiadmomość:</label>
+        <br>
+        <textarea name="area-text-mess" id="area-text-mess"></textarea>
+        <br>
+        
+        <input type="submit">
+    </form>
+</body>
+</html>
