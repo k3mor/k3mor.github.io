@@ -1,0 +1,56 @@
+body {
+    background-color: aquamarine;
+    font-family: 'Lato', sans-serif;
+}
+
+form {
+    padding: 20px;
+    background-color: #213b50;
+    color: #fff;
+}
+
+label {
+    display: block;
+}
+
+label[for*=male],
+label[for=agreement] {
+    display: inline;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    padding: 5px;
+}
+
+input,
+select,
+textarea {
+    background-color: #2b4a64;
+    width: 50%;
+    margin-bottom: 10px;
+    border: 1px solid #2b4a64
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: #4e708c;
+    border: 1px solid #fff;
+}
+
+input[type="submit"] {
+    background-color: #1ac056;
+    width: auto;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+    background-color: #46e881;
+    color: brown;
+}

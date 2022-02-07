@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selektory elementów</title>
+    <style>
+        #main-heading::before{
+            content: "*";
+            color: red;
+        }
+        #main-heading::after{
+            content: "*";
+            color: green;
+        }
+        h1{
+            color: pink;
+            font-size: 4em;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Main heading</h1>
+</body>
+</html>
