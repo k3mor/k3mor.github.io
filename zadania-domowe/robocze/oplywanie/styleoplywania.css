@@ -1,0 +1,16 @@
+* {
+    color: black;
+    font-size: 1.2em;
+}
+
+img {
+    width: 200px;
+}
+
+.image {
+    float: left;
+}
+
+.clear-float {
+    clear: both;
+}

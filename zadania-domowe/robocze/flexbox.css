@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: gray;
+    width: 900px;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Poziom równo doodkoła */
+    align-content: space-around;
+    /*align-items: center;*/
+    /* Według osi  */
+
+}
+
+.item {
+    flex-basis: 33%;
+    height: 296px;
+    /*border: 1px solid #fff;*/
+    text-transform: uppercase;
+    font-size: 2em;
+    background-color: orange;
+    /*padding: 10px;*/
+    color: white;
+}

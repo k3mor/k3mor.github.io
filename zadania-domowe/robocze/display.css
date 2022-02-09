@@ -1,0 +1,28 @@
+* {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+h2 {
+    color: gray;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.display-inlay {
+    display: inline;
+}
+
+.display-block {
+    display: block;
+}
+
+.disaplay-inline-block {
+    display: inline-block;
+}

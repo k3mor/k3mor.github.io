@@ -1,0 +1,86 @@
+/* pseudo klasy */
+body {
+    background-color: blanchedalmond;
+}
+
+a:link:hover {
+    color: orange;
+}
+
+input {
+    background-color: darkgrey;
+}
+
+input:focus {
+    background-color: orchid;
+}
+
+/* Odwołanie do pierwszego i ostatniego elementu li */
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: blue;
+}
+
+/* Np; piąty li w kolejności */
+li:nth-child(5) {
+    color: green;
+}
+
+/* Parzyste lub nieparzyste */
+li:nth-child(even) {
+    background-color: greenyellow;
+}
+
+/*   Co ile elemntów, np co 3*/
+li:nth-child(3n) {
+    font-size: 1.5em;
+}
+
+/* J/w z przesunięciem */
+li:nth-child(3n+1) {
+    color: red;
+}
+
+/* Inny sposób */
+/*
+ Szuka pierwszego elementu, dziecka. określonego typu
+*/
+section p:nth-of-type(1) {
+    color: saddlebrown;
+    font-weight: bold;
+}
+
+/* Selektory atrybutu */
+/* po atrybucie target */
+a[target] {
+    color: red;
+}
+
+/* Po atrybucie z wartościa */
+a[title="ev"] {
+    color: blue;
+    background-color: #fff;
+}
+
+/* Jako osbnej wartosci */
+a[title~="value"] {
+    font-weight: bold;
+}
+
+/* Wszystko co zawiera element value */
+a[title*="value"] {
+    text-transform: uppercase;
+}
+
+/* Czy na początku wystepuje zadany ciąg */
+a[href^="https"] {
+    background-color: yellowgreen;
+}
+
+/* Czy na końcu wystepuje zadany ciąg */
+a[href$=".zip"] {
+    background-color: pink;
+}
