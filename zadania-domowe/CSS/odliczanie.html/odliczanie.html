@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odliczanie</title>
+    <style>
+        #container{
+            background-color: #000;
+            width: 200px;
+           
+        }
+        .div-box{
+            position: absolute;
+            background-color: #000;
+            color: #fff;
+            font-size: 100px;
+            line-height: 100px;
+            height: 100px;
+            width: 200px;
+            text-align: center;
+        }
+        #box10, #box9, #box8, #box7, #box6, #box5, #box4, #box3, #box2, #box1{
+            visibility:hidden;
+        }
+
+        @keyframes ukryj
+        {
+            0% {
+                    visibility: visible;
+                }
+            100%{
+                    
+                }
+    
+        }
+.animateAll {
+    animation-name: ukryj;
+    animation-timing-function: ease-in-out;
+}
+.animate10 {
+    animation-duration: 1s;
+} 
+.animate9{
+    animation-duration: 2s;
+}
+.animate8{
+    animation-duration: 3s;
+}
+.animate7{
+    animation-duration: 4s;
+}
+.animate6{
+    animation-duration: 5s;
+}
+.animate5{
+    animation-duration: 6s;
+}
+.animate4{
+    animation-duration: 7s;
+}
+.animate3{
+    animation-duration: 8s;
+}
+.animate2{
+    animation-duration: 9s;
+}
+.animate1{
+    animation-duration: 10s;
+}
+.mini{
+    font-size: 18px;
+    color: red;font-weight: bold;
+}
+    </style>cd 
+</head>
+<body>
+    <div id="container">
+    
+        <div id="box" class="div-box  animate1 mini">I LOVE CSS</div>
+        <div id="box1" class="div-box  animateAll animate1">1</div>
+        <div id="box2" class="div-box  animateAll animate2">2</div>
+        <div id="box3" class="div-box  animateAll animate3">3</div>
+        <div id="box4" class="div-box  animateAll animate4">4</div>
+        <div id="box5" class="div-box  animateAll animate5">5</div>
+        <div id="box6" class="div-box  animateAll animate6">6</div>
+        <div id="box7" class="div-box  animateAll animate7">7</div>
+        <div id="box8" class="div-box  animateAll animate8">8</div>
+        <div id="box9" class="div-box  animateAll animate9">9</div>
+        <div id="box10" class="div-box animateAll animate10">10</div>
+    </div>
+  
+</body>
+</html>

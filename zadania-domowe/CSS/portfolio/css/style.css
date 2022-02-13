@@ -121,7 +121,7 @@ label[for="drop-nav"] {
     text-decoration: none;
     padding: 14px 20px;
     display: block;
-    transition: all 0.3;
+    transition: all 0.3s;
 }
 
 .main-menu ul .menu-item a:hover {
@@ -182,7 +182,7 @@ label[for="drop-nav"] {
     font-weight: 300;
     font-size: 3em;
     opacity: 0;
-    transition: all 0.2;
+    transition: all 0.3s;
 }
 
 .portfolio-wraper .portfolio-item h3:hover {
@@ -222,7 +222,7 @@ input[type="email"] {
 .social-links .social-link {
     font-size: 2.5em;
     color: #007bff;
-    transition: all 0.3;
+    transition: all 0.3s;
     display: inline-block;
     margin: 0 20px;
 }

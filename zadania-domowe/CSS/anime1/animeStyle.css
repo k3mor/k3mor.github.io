@@ -1,0 +1,82 @@
+body {
+    background-color: burlywood;
+}
+
+/* Przejścia */
+.box1 {
+    height: 300px;
+    width: 600px;
+    background-color: gray;
+    cursor: pointer;
+    /*
+    transition-duration: all;
+    transition-property: background-color;
+    */
+    /* Zmienia się płynnie tylko kolor tła */
+
+    /*transition-timing-function: linear;
+    transition-delay: 2s;
+    */
+    /* opóźnienie */
+    transition: background-color 2s linear 2s, width 1s ease-in-out 0.5s;
+
+}
+
+.box1:hover {
+    background-color: orange;
+    width: 800px;
+}
+
+
+/* Koniec przejśc  */
+.box {
+    border: 3px solid red;
+    width: 200px;
+    height: 174;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+/*
+.translate {
+    transform: translate(50px, 20px)
+} */
+/* Można procentowo - według wymiarów obrazka */
+.translate {
+    transform: translate(20%, 20%)
+        /*  Według X i Y */
+}
+
+/* Scalowanie */
+.scale {
+    transform: scale(0.5);
+    /* Bez jednostki */
+}
+
+/* Anime */
+/* Klatki plus nazwa  */
+@keyframes resize {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate {
+    animation-name: resize;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
