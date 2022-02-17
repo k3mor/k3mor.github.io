@@ -34,39 +34,7 @@
         abarot();
         document.write("<br />" + "*************************" + "<br />");
 
-        /* Wartości do potęgi */
-        /* Punkt wyjścia wersja bez fukcji */
-        document.write("<br />");
-        let tab2 = [1,2,3,4,5,6,7,8,9], i, pot=2;
-        for(i=0;i<tab2.length;i++){
-            document.write(tab2[i]*tab2[i] + ", ");
-        }
-        document.write("<br />");
-        /* Wersja z funkcją - prosta z opcją do pot. */
-        let tab3 = [1,2,3,4,5,6,7,8,9], x;
-        function doKw(pot){
-            for(x=0;x<tab3.length;x++)
-            {
-                elemTab = tab3[i];
-                document.write(tab3[x]*tab3[x]+", ");
-            }
-        }
-        doKw(2);
-        /* Wersja z funkcją Math.pow(item,pot) */
-        document.write("<br />");
-        let tab3b = [1,2,3,4,5,6,7,8,9], xb;
-        function doKw2(){
-            
-            for(xb=0;xb<tab3b.length;xb++)
-            {
-                let wynik = Math.pow(tab3b[xb],2);
-                document.write(wynik + ", ");
-            }
-            
-           //document.write(Math.pow(tab3b[0],2));
-        }
-        doKw2();
-
+    
 
         document.write("<br />");
          /* Zadanie 3 - Suma Iloczyn */
@@ -135,6 +103,54 @@
             document.write("Iloraz elementów tablicy tab4 wynosi: "+ iloraz);
         }
         blee2(tab4);
+
+        /* Zadanie 4 */
+
+        document.write("<br />" + "*************************" + "<br />");
+            /* Wartości do potęgi */
+        /* Punkt wyjścia wersja bez fukcji */
+        document.write("<br />");
+        let tab2 = [1,2,3,4,5,6,7,8,9], i, pot=2;
+        for(i=0;i<tab2.length;i++){
+            document.write(tab2[i]*tab2[i] + ", ");
+        }
+        document.write("<br />");
+        /* Wersja z funkcją - prosta z opcją do pot. */
+        let tab3 = [1,2,3,4,5,6,7,8,9], x;
+        function doKw(pot){
+            for(x=0;x<tab3.length;x++)
+            {
+                elemTab = tab3[i];
+                document.write(tab3[x]*tab3[x]+", ");
+            }
+        }
+        doKw(2);
+        /* Wersja z funkcją Math.pow(item,pot) */
+        document.write("<br />");
+        let tab3b = [1,2,3,4,5,6,7,8,9], xb;
+        function doKw2(){
+            
+            for(xb=0;xb<tab3b.length;xb++)
+            {
+                let wynik = Math.pow(tab3b[xb],2);
+                document.write(wynik + ", ");
+            }
+            
+        }
+        doKw2();
+        document.write("<br />" + "*************************" + "<br />");
+        /* Zadanie 4 - Suma kwadratów */
+        let tab9 = [1,2,3,4,5,6,7,8,9];
+        let suma = 0;
+
+        function qwe()
+            {
+                for(i=0;i<tab9.length;i++)
+                {
+                    suma+=Math.pow(tab9[i],2);
+                } document.write("Suma elementów tablicy do kwadratu wynosi: " + suma);
+            }
+            qwe();
 
     </script>
 </body>
