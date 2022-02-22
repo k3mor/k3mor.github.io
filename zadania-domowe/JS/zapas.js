@@ -141,3 +141,5 @@
                 } document.write("Suma elementów tablicy do kwadratu wynosi: " + suma);
             }
             qwe(kw);
+
+/* Function learning */

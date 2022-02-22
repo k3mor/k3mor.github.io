@@ -1,10 +1,19 @@
-console.log("Zadanie 1: ");
-    var numText = "Akademia 108";
-    function reversText(numText)
+console.log("Zadanie 1 a: ");
+    var numText1 = "Akademia 108";
+    function reversText1(numTextA)
         {
-            console.log(numText.split("").reverse().join(""));
+            console.log(numTextA.split("").reverse().join(""));
         }
-    reversText(numText);
+    reversText1(numText1);
+
+    console.log("Zadanie 1 b: ");
+    var numText2 = "Akademia 108";
+    function reversText2(numText)
+        {
+            return numText.split("").reverse().join("");
+        }
+    console.log(reversText2(numText2));
+
 /*
 */ 
 console.log("******************");
