@@ -42,7 +42,7 @@ console.log("Zadanie : 3");
     doubleCal(tab4);
 
 console.log("******************");
-console.log("Zadanie : 4");
+console.log("Zadanie : 4 a");
     let tab9 = [1,2,3,4,5,6,7,8,9];
     let suma = 0;
     function qwe()
@@ -53,5 +53,17 @@ console.log("Zadanie : 4");
                 } console.log("Suma elementów tablicy do kwadratu wynosi: " + suma);
         }
     qwe();
+
+    console.log("Zadanie : 4 b");
+    let tab10 = [1,2,3,4,5,6,7,8,9];
+    let suma2 = 0;
+    function qwe2(n)
+        {
+            for(i=0;i<n.length;i++)
+                {
+                    suma2+=Math.pow(tab10[i],2);
+                } return "Suma elementów tablicy do kwadratu wynosi: " + suma2;
+        }
+    qwe2(tab10);
 
       
