@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason</title>
+</head>
+<body>
+    <script>
+        /*
+       let listaPracownikow = {
+            "employes": [
+                {"firstName": "Hans", "lastname": "Schmidt"},
+                {"firstName": "Jan", "lastname": "Kowalski"},
+                {"firstName": "Roman", "lastname": "Zbroinski"}
+            ]
+        };
+        console.log(listaPracownikow.employes[0].firstName);
+        for(let pracownik of listaPracownikow.employes){
+            console.log(pracownik.lastname);
+        }
+        //Zamiana na stringa
+        console.log(JSON.stringify(listaPracownikow));
+
+        let listaPracownikow2 =` {
+            "employes": [
+                {"firstName": "Hans", "lastname": "Schmidt"},
+                {"firstName": "Jan", "lastname": "Kowalski"},
+                {"firstName": "Roman", "lastname": "Zbroinski"}
+            ]
+        }`;
+        console.log(listaPracownikow2);
+        console.log(JSON.parse(listaPracownikow2));
+*/
+    //Pobierz do zmiennej jsonPracownicy poniższy obiekt:
+        let jsonPracownicy = {
+        "pracownicy":[
+            {"firstName": "Krystian", "lastName": "Dziopa"}, 
+            {"firstName": "Anna", "lastName": "Szapiel"},
+            {"firstName": "Piotr", "lastName": "Żmuda"}
+            ]
+        };
+        //Wyświetl go w konsoli:
+        console.log(JSON.stringify(jsonPracownicy));
+       // a następnie za pomocą pętli forEach przeiteruj po każdym pracowniku
+        for(let pracownik of jsonPracownicy.pracownicy){
+            console.log(pracownik);
+        }
+        //oraz wyświetl w konsoli index elementu tablicy oraz imie i nazwisko pracownika.
+        for(let pracownik of jsonPracownicy.pracownicy){
+            console.log(pracownik.firstName,pracownik.lastName);
+        }
+
+        /*
+        console.log(jsonPracownicy.pracownicy);
+        for(let i=0;i<jsonPracownicy.pracownicy.length;i++) {
+            console.log([i]);
+        }
+        */
+        
+      
+        //
+
+        /*
+        console.log("*******************");
+        let listaPracownikow = {
+            "employes": [
+                {"firstName": "Hans", "lastname": "Schmidt"},
+                {"firstName": "Jan", "lastname": "Kowalski"},
+                {"firstName": "Roman", "lastname": "Zbroinski"}
+            ]
+        };
+        //console.log(listaPracownikow.employes.firstName);
+        for(let pracownik of listaPracownikow.employes){
+            console.log(pracownik.lastname);
+        }
+        */
+    </script>
+</body>
+</html>

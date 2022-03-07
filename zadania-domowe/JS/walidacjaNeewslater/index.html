@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walidacja formularza plus newslater</title>
+    <style link rel="stylesheet" type="style.css"></style>
+</head>
+
+<body>
+    <form id="newslater-form" action="">
+
+        <ul id="errors"></ul>
+
+        <label for="name">Imię i Nazwisko</label><br />
+        <input type="text" name="name" id="name" placeholder="Roman Zbroiński"><br />
+
+        <label for="email">Adres email</label><br />
+        <input type="email" name="email" id="email" placeholder="romanzbroinski@gmail.com"><br />
+
+        <input type="checkbox" name="agree-1" id="agree-1">
+        <label for="agree-1">Wyrażam zgodę</label><br />
+
+        <input type="checkbox" name="agree-2" id="agree-2">
+        <label for="agree-2">Wyrażam zgodę</label><br />
+
+        <input type="checkbox" name="all-agree" id="all-agree">
+        <label for="all-agree">Wyrażam wszystkoe zgody</label><br />
+
+        <button type="submit" id="sign-up"> Zapisz</button>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

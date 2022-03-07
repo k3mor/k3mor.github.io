@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <ul id="list">
+        <li>First 1</li>
+        <li>Second 2</li>
+        <li>Third 3</li>
+        <li>Fourth 4</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+    </ul>
+-->
+    <script>
+
+/* Wyciąganie dzieci sposób 1*/
+//let list = document.getElementById('list');
+//console.log(list.childNodes);
+//console.log(list.children);
+//console.log(list);
+//console.log(list.childNodes);
+//console.log(list.children);
+/*Pobieranie piewrszy element naszego rodzica*/
+//console.log(list.firstChild);
+//console.log(list.firstElementChild);
+//console.log(list.lastElementChild);
+//console.log(list.lastChild);
+
+//let pierwszyElement = list.firstElementChild;
+//let ostatniElement = list.lastElementChild;
+//console.log(pierwszyElement);
+//console.log(ostatniElement);
+/*Teraz wlaśnie możemy pobierać rodzica naszego elementu*/
+//console.log(pierwszyElement.parentNode);
+//console.log(ostatniElement.parentElement);
+/*MOżemy wejść do rodzica wyżej, czyli body*/
+//console.log(pierwszyElement.parentNode.parentNode);
+//console.log(ostatniElement.parentElement.parentElement);
+/* I tak dalej */
+
+/* Najbliższe rodzeństwo pierwszego elementu */
+//console.log(pierwszyElement.nextSibling);
+/* Kolejny po pierwszym  */
+//console.log(pierwszyElement.nextElementSibling);
+/* Poprzwednie rodzeństwo/ement ostatniego elementu */
+//console.log(ostatniElement.previousSibling);
+//console.log(ostatniElement.previousElementSibling);
+
+/* Sprawdzanie czy lement posoda węzły dzieci */
+//console.log(pierwszyElement.hasChildNodes());
+//console.log(pierwszyElement.childNodes);//sprawdzam co nim jest
+
+/* VVZy nasz element ma dzieci */
+/* Przy uzyciu operatora ternery */
+//console.log((pierwszyElement.children.length>0)? true : false);
+
+/* Closes */
+//console.log(pierwszyElement.closest('#list'));
+/*
+let liElement = document.createElement('li');
+let txtNode = document.createTextNode('Seventh 7');
+console.log(liElement) ;
+console.log(txtNode);
+let atrrNode = document.createAttribute('class');//Tworzenie klasy
+console.log(atrrNode);
+atrrNode.value='last';
+*/
+/* Dodanie elemntu na końcu wszysrkich dzieci */
+//liElement.appendChild(txtNode);//Dodanie li do listy
+/* Dodane jeszcze atrybutu */
+//liElement.setAttributeNode(atrrNode);
+/* Dopinamy do listy */
+//let list = document.getElementById('list');
+//console.log(list);
+//list.appendChild(liElement);
+/*
+//Tablica
+let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokio', 'Moscow'];
+//Tworzenie ul
+let listMake = document.createElement('ol');
+//console.log(listMake);
+let atrrId = document.createAttribute('id');
+atrrId.value = 'cityList';
+listMake.setAttributeNode(atrrId);
+//Tworzenie li
+let LiElement = document.createElement('li');
+let atrrClass = document.createAttribute('class');
+atrrClass.value = 'city';
+LiElement.setAttributeNode(atrrClass);
+
+document.body.appendChild(LiElement);
+listMake.appendChild(LiElement);
+*/
+
+//let tekst = "sdsd";
+//let citiName = document.createTextNode(tekst);
+//LiElement.appendChild(citiName);
+
+let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokio', 'Moscow'];
+let listMake = document.createElement('ol');
+
+for(i=0;i<cities.length;i++){
+    let LiElement = document.createElement('li');
+    let atrrClass = document.createAttribute('class');
+    atrrClass.value = 'city';
+    LiElement.setAttributeNode(atrrClass);
+    document.body.appendChild(listMake);
+    document.body.appendChild(LiElement);
+    listMake.appendChild(LiElement);
+    let tekst = cities[i];
+    let citiName = document.createTextNode(tekst);
+    LiElement.appendChild(citiName);
+    console.log(LiElement);
+}
+/*
+listMake.appendChild(LiElement);
+*/
+
+
+/*
+let LiElement = document.createElement('li');
+
+let atrrClass = document.createAttribute('class');
+atrrClass.value = 'city';
+LiElement.setAttributeNode(atrrClass);
+listMake.appendChild(LiElement);
+let citiName = document.createTextNode('Miasto');
+
+for(i=0;i<cities.length;i++){
+    LiElement.appendChild(citiName);
+    makeCity = listMake.appendChild(LiElement);
+    document.write(makeCity);
+}
+*/
+
+
+
+
+    </script>
+</body>
+</html>

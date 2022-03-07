@@ -266,7 +266,7 @@ console.log(ksiazka2);
 const ksiazka3 = new Ksiazka("Wiedźmin", "Andrzej Spakowski");
 console.log(ksiazka3);
 
-var ksiazki = new Array(ksiazka1,ksiazka2,ksiazka3);
+//var ksiazki = new Array(ksiazka1,ksiazka2,ksiazka3);
 
 /*
 for(i=0; i<ksiazki.length; i++){
@@ -279,3 +279,22 @@ for(let items of ksiazki){
 }
 console.log(ksiazki);
 */
+/* Math */
+/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math */
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.LN2);
+console.log(Math.LN10);
+console.log(Math.sin(0));
+console.log(Math.sin(Math.PI/2));
+console.log(Math.cos(Math.PI/2));
+console.log(Math.pow(2,3));//Potęgowanie
+console.log(Math.sqrt(9));//Pierwiastek
+console.log(Math.random());//Losowo pomiędzy 0 a 1
+console.log(Math.floor(3.99));//Najmniejsza całkowita od podanej lub równa podaej
+console.log(Math.floor(Math.random()*101));//Losowanie liczby z zakresu o - 100
+/* Losowanie od 1 do 100 */
+console.log(Math.floor(Math.random()*100)+1);
+/* Zaokrąglanie do najbliższej całkowitej */
+console.log(Math.round(10.49));
+console.log(Math.round(10.51));
