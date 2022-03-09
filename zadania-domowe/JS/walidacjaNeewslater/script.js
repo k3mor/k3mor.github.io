@@ -30,6 +30,11 @@ const validate = (event)=>{
         errors.appendChild(liError);
         //console.log(liError);
     }
+    if(!agree1.checked){
+        let liError = document.createElement('li');
+        liError.innerHTML = "Zaznacz zgodę 1, bo nie zrobimy intere!su";
+        errors.appendChild(liError);
+    }
     
     //
     event.preventDefault();
