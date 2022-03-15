@@ -19,13 +19,13 @@ body {
 .accordion-item {
     border-bottom: 1px solid #dce7eb;
     padding: 15px 15px 15px 40px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .accordion-title {
     color: #2b3a40;
     text-decoration: none;
-    display: inline-block;  
+    display: inline-block;
     position: relative;
 }
 
@@ -38,8 +38,10 @@ body {
     color: #1e3768;
 }
 
+.open .accordion-title::before {
+    content: "-";
+}
+
 .accordion-content {
     display: none;
 }
-
-
