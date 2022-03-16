@@ -5,21 +5,18 @@ let preloading = false;
 const showPreloader = () => {
     let preloader = document.getElementById('preloader')
     preloader.style.display ='block';
+    preloading = true;
 }
 
 const hidePreloader = () => {
     let preloader = document.getElementById('preloader')
     preloader.style.display ='none';
+    preloading = false;
 }
-
-
-
 const getData = () => {
     if(!preloading){
-        //bez funkcji preloadingu
-    }
-    preloading = true;
-   fetch('https://akademia108.pl/api/ajax/get-users.php')
+        showPreloader();
+        fetch('https://akademia108.pl/api/ajax/get-users.php')
    .then(res=>res.json())
    .then(data => {
     let body = document.body;
@@ -47,6 +44,8 @@ const getData = () => {
        console.log(error);
    })
 }
+} 
+
 const   scrollToEndPage = () => {
     let d = document.documentElement;
     //height of an element's content, incuding content
@@ -63,8 +62,8 @@ const   scrollToEndPage = () => {
     if(sumScrollTopClientHeight>=scrollHeight){
         endOfThePage += 1;
         console.log(`Finish page ${endOfThePage}`);
+        getData();
     }
-    showPreloader();
-    getData();
+   
 }
 window.addEventListener('scroll', scrollToEndPage);
