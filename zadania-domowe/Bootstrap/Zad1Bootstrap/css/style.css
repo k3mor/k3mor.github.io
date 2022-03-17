@@ -1,0 +1,19 @@
+h2 {
+    text-align: center;
+    padding: 25px;
+}
+
+.fa-user {
+    display: block;
+    text-align: center;
+    color: orange;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+hr {
+    width: 75%;
+}
