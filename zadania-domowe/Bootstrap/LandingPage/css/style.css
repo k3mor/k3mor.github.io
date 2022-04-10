@@ -1,0 +1,37 @@
+.section {
+    padding: 60px 0;
+}
+
+.showcase-img {
+    background-size: cover;
+    background-position: center;
+}
+
+.showcase-text {
+    padding: 50px;
+}
+
+.showcase {
+    padding: 0;
+}
+
+.team-iten {
+    max-width: 200px;
+}
+
+@media (max-width:768px) {
+
+    .service-item,
+    .team-item-last {
+        margin-bottom: 50px;
+    }
+
+    .service-item:last-child,
+    .team-item-last {
+        margin: 0;
+    }
+
+    .showcase-img {
+        height: 300px;
+    }
+}

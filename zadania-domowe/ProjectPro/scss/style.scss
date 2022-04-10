@@ -1,0 +1,22 @@
+@import 'utils/variabels';
+@import 'utils/mixins';
+
+@import 'base/normalize';
+@import 'base/global';
+
+@import 'layaout/grid';
+@import 'layaout/nav';
+@import 'layaout/header';
+@import 'layaout/about';
+@import 'layaout/services';
+@import 'layaout/teams';
+@import 'layaout/appointment';
+@import 'layaout/contact';
+@import 'layaout/footer';
+
+
+@import 'components/buttons';
+@import 'components/infoboxes';
+@import 'components/inputs';
+
+
